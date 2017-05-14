@@ -1,0 +1,5 @@
+.env
+*.lock
+/vendor/
+/storage/logs
+/storage/cache
