@@ -1,7 +1,8 @@
 <?php 
 
-$app->get('/[{name}[/{age}]]', function ($req, $res, $args) {
-	return $this->view->render($res, 'index.twig', $args);
+$app->get('/about', function() {
+	return 'Slim Framework v3';
 });
 
+$app->get('/[{name}[/{age}]]', 'HomeController:index');
 
