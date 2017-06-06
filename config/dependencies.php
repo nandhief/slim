@@ -21,7 +21,7 @@ $container['logger'] = function ($c) {
 };
 
 $container['date'] = function ($c) {
-	return Carbon\Carbon::now(env('APP_DATE'));
+	return Carbon\Carbon::now(env('APP_DATE', 'UTC'));
 };
 
 $container['db'] = function ($c) {
